@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/home" color="danger">Salir</ion-button>
+    </ion-buttons>
+    <ion-title color="primary">Pagina Principal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <center><img src="../../assets/icon/avatar.jpeg" alt="" style="border-radius: 50%; margin: 20px;" width="40%">
+    <h2 style="color:dodgerblue;">Jose Luis Flores</h2>
+    <h4>desarrollador</h4>
+    <br>
+  </center>
+
+  <ion-card>
+    <img src="../../assets/icon/1.jpg" alt="">
+    <ion-card-header>
+      <ion-card-subtitle> Sobre Nosotros</ion-card-subtitle>
+      <ion-card-title>¿Quiénes somos?</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="Inicio">
+          <ion-icon name="home" color="primary"></ion-icon>
+          <ion-label color="primary">Pagina principal</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="Desarrolladores" routerLink="/desarrolladores">
+          <ion-icon name="person-sharp"></ion-icon>
+          <ion-label>Desarrolladores</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="map" routerLink="/posts">
+          <ion-icon name="pencil-outline"></ion-icon>
+          <ion-label>Posts</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

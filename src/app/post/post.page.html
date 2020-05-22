@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/home" color="danger">Salir</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="back" color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">Detalles Post</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <center><img src="../../assets/icon/avatar.jpeg" alt="" style="border-radius: 50%; margin: 20px;" width="40%">
+    <h2 style="color:dodgerblue;">Jose Luis Flores</h2>
+    <br>
+  </center>
+  <ion-item class="ion-padding">
+    <ion-label class="ion-text-center">Hola comunidad, tengo una duda sobre reac</ion-label>
+  </ion-item>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="primary">Comentarios</ion-card-title>
+    </ion-card-header>
+
+    <ion-list>
+      <ion-item>
+        <ion-avatar  slot="start">
+          <img src="../../assets/icon/JALO.jpg" />
+        </ion-avatar>
+        <ion-label>
+          <h1 style="color: royalblue;">Javier leon</h1>En que te puedo ayudar?</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-input placeholder="deja tu comentario"></ion-input>
+    <ion-button (click)="onClick()" slot="end">
+      <ion-icon slot="icon-only" name="send"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

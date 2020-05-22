@@ -1,20 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title color="primary">
+      Developer´sNetwork
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="fondo">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title >Developer´sNetwork</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    
+    <center>
+      <div>
+        <img src="../../assets/icon/DN.png" alt="Logo" width="50%" class="ion-padding">
+      </div>
+    </center>
+    <h1 color="primary">Developer'sNetwork</h1>
+    <p class="ion-padding"><br>Crea tu perfil de desarrollador, comparte tus experiencias, posts, conecta con otros desarrolladores! </p> <br>
+    <ion-button id="iniciar" color="primary" routerLink="/login" shape="round">
+      Iniciar Sesión
+    </ion-button>
   </div>
 </ion-content>
+
+<ion-footer>
+    <p class="ion-text-center">Version 1.0 10/05/2020</p>
+</ion-footer>

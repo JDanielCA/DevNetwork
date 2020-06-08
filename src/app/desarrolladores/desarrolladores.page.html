@@ -8,50 +8,25 @@
 </ion-header>
 
 <ion-content>
-
-  <ion-list>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-list *ngFor="let user of usuarios">
     <ion-item-sliding>
       <ion-item routerLink="/desarrollador">
         <ion-avatar slot="start">
-          <img src="../../assets/icon/avatar.jpeg">
+          <img src="{{user.user.avatar}}">
         </ion-avatar>
         <ion-label>
-          <h2 style="color: dodgerblue; font-size: 1.3em;">Jose Luis Flores Garcia </h2>
-          Desarrollador Junior
+          <h2 style="color: dodgerblue; font-size: 1.3em;">{{user.user.name}} </h2>
+         {{user.status}}
+        </ion-label>
+        <ion-label [hidden]>
+         {{user.status}}
         </ion-label>
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
-      </ion-item-options>
-    </ion-item-sliding>
-  
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="../../assets/icon/JALO.jpg">
-        </ion-avatar>
-        <ion-label>
-          <h2 style="color: dodgerblue; font-size: 1.3em;">Javier Alberto Leon Orosco</h2>
-          Desarrollador Junior
-        </ion-label>
-      </ion-item>
-      <ion-item-options side="end">
-        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
-      </ion-item-options>
-    </ion-item-sliding>
-
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="../../assets/icon/jdca.jpg">
-        </ion-avatar>
-        <ion-label>
-          <h2 style="color: dodgerblue; font-size: 1.3em;">Juan Daniel Cruz Aguilar </h2>
-          Desarrollador Junior
-        </ion-label>
-      </ion-item>
-      <ion-item-options side="end">
-        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+        <ion-item-option (click)="unread(item)">Nada</ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>

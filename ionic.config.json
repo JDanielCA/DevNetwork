@@ -1,5 +1,7 @@
 {
   "name": "AppSocial",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
